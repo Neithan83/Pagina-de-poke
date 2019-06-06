@@ -1,0 +1,62 @@
+
+<html ng-app="pokemon">
+<head >
+    <div class="contenedor">
+        <section id="logo">
+            <img src="img/lite.png">
+	<link rel="stylesheet" href="../lib/boo2/css/bootstrap.css">
+        <link rel="stylesheet" href="css/style.css" >
+        <input type="checkbox" id="menu-bar">
+        <label class="fontawesome-align-justify" for="menu-bar"></label>
+                <nav class="menu">
+                    <a href="">Inicio de Secion</a>
+                    <a href="">Registro</a>
+                    <a href="">Home</a>
+                </nav>
+            <main>
+            <section id="banner">
+                <img src="img/logo.jpg">
+                <div class="contenedor">
+                    <div class="text center"></div>
+                    <h2>LOS POKEMONES A LA PALMA  DE TU MANO</h2>
+                    <p>NO PIERDAS NINGUNO
+</p>
+	<script src="../lib/jQuery.js"></script>
+	<title>PokeLogin</title>
+            
+<body class="fondo" ng-controller="listadopokemon">
+	<div class="container-fluid navBar">
+		<div class="row">
+			<div class="col-md-12">
+
+				<p class="centrar">Busca Tu Pokemon</p>
+
+<p class="centrarr"><input type="text" ng-model="test"></p>
+			</div>
+		</div>
+	</div>
+	<div class="container-fluid">
+		<div class="col-md-3 pad" ng-repeat="p in Listado | filter : test">
+			<div class="pokeinfo">
+				<div>
+					<img src="{{p.data.sprites.front_default}}" class="img-responsive imgpoke">
+				</div>
+				<div class="text-center nompoke">
+					<h4>{{p.data.name}}</h4>
+				</div>
+			</div>
+		</div>
+	</div>
+	<script>
+	for (i = 0; i <= 10; i++) {
+		document.write("" + "<br>")
+	}
+	</script>
+	<style>
+@import url('https://fonts.googleapis.com/css?family=Anton&display=swap');
+</style>
+	<script src="../lib/angular.js"></script>
+	<script src="../lib/boo2/js/bootstrap.js"></script>
+	<script src="../js/script.js"></script>
+</body>
+</html>

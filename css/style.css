@@ -1,0 +1,665 @@
+@import url(https://fonts.googleapis.com/css?family=Open+Sans);
+@import url(http://weloveiconfonts.com/api/?family=fontawesome|typicons);
+[class*="fontawesome-"]:before {
+  font-family: 'FontAwesome', sans-serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Open Sans', sans-serif;
+}
+
+header {
+    width: 100%;
+    height: 50px;
+    background: #333;
+    color: #3B3D64;
+    
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 100;
+}
+
+.contenedor {
+    width: 98%;
+    margin: auto;
+}
+
+h1 {
+    float: left;
+    
+}
+h2{
+    text-align: center;
+}
+p{
+    text-align: center;
+}
+
+header .contenedor {
+    display: table;
+}
+
+section {
+    width: 100%;
+    margin-bottom: 25px;
+}
+
+#bienvenidos {
+    text-align: center;
+}
+
+footer .contenedor {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding-bottom: 25px;
+}
+
+.copy {
+    font-size: 0px;
+}
+
+.sociales {
+    width: 100%;
+    text-align: center;
+    font-size: 28px;
+}
+
+.sociales a {
+    color: #333;
+    text-decoration: none;
+}
+
+@media (min-width:768px) { 
+    .sociales {
+        width: auto;
+    }
+    
+    footer .contenedor {
+        justify-content: space-between;
+    }
+}
+
+
+@media (min-width:1024px) {
+    .contenedor {
+        width: 1000px;
+    }
+}
+
+
+#blog h3, h4 {
+    text-align: center;
+}
+
+#blog .contenedor{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+#blog article {
+    margin: 15px;
+}
+
+#blog img {
+    width: 100%;
+    max-width: 280px;
+}
+#banner {
+    margin-top: 50px;
+    position: relative;
+}
+
+#banner img {
+    width: 100%;
+    height: 100%;
+}
+
+#banner .contenedor {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    color: #fff;
+}
+
+#banner h2 {
+    font-size: 28px;
+}
+
+#banner a {
+    display: block;
+    width: 100px;
+    color: #fff;
+    text-decoration: none;
+    padding: 7px;
+    margin-top: 10px;
+    border: 3px solid #fff;
+}
+
+#banner a:hover {
+    background: rgba(51,51,51,0.5);
+}
+
+@media (min-width:480px) {
+    #banner h2 {
+        font-size: 40px;
+    }
+    
+    #banner a {
+        margin-top: 25px;
+    }
+}
+
+@media (min-width:768px) { 
+    #banner {
+        height: 300px;
+        overflow: hidden;
+    }
+    
+    #banner img {
+        height: auto;
+        margin-top: -100px;
+    }
+}
+
+@media (min-width:1024px) { 
+    #banner img {
+        margin-top: -200px;
+    }
+}
+
+#info {
+    background: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+}
+
+#info .contenedor {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.info-pet {
+    margin: 20px;
+}
+
+.info-pet img {
+    width: 180px;
+    height: 180px;
+    border-radius: 50%;
+    border: 7px solid #fff;
+}
+
+@media (min-width:480px) {
+    .info-pet {
+        width: 40%;
+    }
+}
+
+@media (min-width:1024px) {
+    .info-pet {
+        width: auto;
+    }
+}
+#menu-bar {
+    display: none;
+}
+
+header label {
+    float: right;
+    font-size: 28px;
+    margin: 6px 0;
+    cursor: pointer;
+}
+
+.menu {
+    position: absolute;
+    top: 50px;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background: rgba(51,51,51,0.9);
+    transition: all 0.5s;
+    transform: translateX(-100%);
+}
+
+.menu a {
+    display: block;
+    color: #fff;
+    height: 50px;
+    text-decoration: none;
+    padding: 15px;
+    border-bottom: 1px solid rgba(255,255,255,0.3);
+}
+
+.menu a:hover {
+    background: rgba(255,255,255,0.3);
+}
+
+#menu-bar:checked ~ .menu {
+    transform: translateX(0%);
+}
+
+@media (min-width:1024px) {
+    .menu {
+        position: static;
+        width: auto;
+        height: auto;
+        transform: translateX(0%);
+        float: right;
+        display: flex;
+    }
+    
+    .menu a {
+        border: none;
+    }
+    
+    header label { 
+        display: none;
+    }
+}
+.fondologin{
+  background: url("https://cdn.vox-cdn.com/thumbor/2rQrkezfONyrRR3vz8d7iezWGTg=/0x0:9035x6400/1200x800/filters:focal(3860x2618:5304x4062)/cdn.vox-cdn.com/uploads/chorus_image/image/63911542/Pok_mon_Masters_Key_Art.0.png")no-repeat ;
+  background-size: cover;
+
+  height: 900px;
+  padding: 0%;
+
+
+  position: center;
+}
+.divisionform{
+  background: url("https://fandelagua.com/wp-content/uploads/2018/02/blog_post01_0005_shutterstock_85392355.jpg")no-repeat ;
+  background-size: cover;
+  width: 60%;
+  height: 60%;
+
+  border-radius: 10px;
+  padding-left: 20%;
+  padding-right: 20%;
+  margin-top:20%;
+}
+.Aguapp{
+  font-size:60px;
+  position: center;
+}
+}
+.usuarioC{
+  width: 100%;
+  background: none;
+  border:3px solid white  !important;
+  border-radius:40px !important;
+}
+.usuarioC2{
+  width: 100%;
+  background: none;
+  border:1px solid #000000 !important;
+  border-radius:20px !important;
+}
+.registrar{
+  width: 100%;
+  height: 30px;
+  font-size: 18px;
+  color: #FFF;
+  background: #616f39;
+}
+.avatar {
+  width: 10%;
+  border-radius: 20%;
+  display:block;
+  margin:auto;
+
+}
+ }
+ .padre {
+  background-color: #fafafa;
+  border: 1px solid #ccc;
+  padding: 0 1rem;
+  margin: 1rem;
+  width: 100%;
+  font-size: "6";
+}
+
+.hijo_uno {
+  background-color:;
+
+  /* IMPORTANTE */
+  width: 220px;
+  margin-left: 358px;
+  margin-right: 300px;
+  font-family: cursive;
+  font-size: :"4";
+font-size: 250%;
+color:blue;
+}
+.text {
+font-size: 160%;
+color: #FF5E07
+}
+body {
+  margin: 0;
+  padding: 0;
+  background: url(https://www.appgoby.com/wp-content/uploads/2018/05/1-1.jpg) no-repeat center top;
+  background-size: cover;
+  font-family: sans-serif;
+  height: 100vh;
+}
+
+.login-box {
+  width: 320px;
+  height: 420px;
+  background: #000;
+  color: #fff;
+  top: 50%;
+  left: 50%;
+  position: absolute;
+  transform: translate(-50%, -50%);
+  box-sizing: border-box;
+  padding: 70px 30px;
+}
+
+.login-box .avatar {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  position: absolute;
+  top: -50px;
+  left: calc(50% - 50px);
+}
+
+.login-box h1 {
+  margin: 0;
+  padding: 0 0 20px;
+  text-align: center;
+  font-size: 22px;
+}
+
+.login-box label {
+  margin: 0;
+  padding: 0;
+  font-weight: bold;
+  display: block;
+}
+
+.login-box input {
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+.login-box input[type="text"], .login-box input[type="password"] {
+  border: none;
+  border-bottom: 1px solid #fff;
+  background: transparent;
+  outline: none;
+  height: 40px;
+  color: #fff;
+  font-size: 16px;
+}
+
+.login-box input[type="submit"] {
+  border: none;
+  outline: none;
+  height: 40px;
+  background: #b80f22;
+  color: #fff;
+  font-size: 18px;
+  border-radius: 20px;
+}
+
+.login-box input[type="submit"]:hover {
+  cursor: pointer;
+  background: #ffc107;
+  color: #000;
+}
+
+.login-box a {
+  text-decoration: none;
+  font-size: 12px;
+  line-height: 20px;
+  color: darkgrey;
+}
+
+.login-box a:hover {
+  color: #fff;
+}
+.login{
+  position: center;
+  font-size: 50%;
+
+
+}
+button.buton{
+  position: center;
+  width: 80px;
+  height: 55px;
+  display:block;
+  margin-left: auto;
+  margin-right: auto;
+
+   }
+a.logeate{
+  font-family: sans-serif;
+  font-style: italic;
+  color: red;
+  font-size: 20px;
+}
+html {
+	font-size: 16px;
+    font-family: 'Lato', sans-serif;
+}
+
+body.img {
+	background:url("https://media1.tenor.com/images/f78c2e4bef5ca120d994589f411d36aa/tenor.gif?itemid=5607196")no-repeat ;
+	background-position: center;
+	background-size: 145%;
+	height: 1000px;
+}
+
+.container {
+	max-width: 450px;
+	height: auto;
+	background-color: #EFEFEF;
+	margin: 5% auto;
+	padding-bottom: 1rem;
+
+}
+
+.form__top {
+	width: 100%;
+	text-align: center;
+	padding: 2rem 0 1rem;
+	border-top: solid .4rem #F39B53;
+	margin-bottom: 1rem;
+}
+
+.form__top h2 {
+	font-weight: bold;
+	color: #CAC8C8;
+	font-size: 18px;
+}
+
+h2 span {
+	color: #F39B53;
+}
+
+.form__reg {
+	padding: 0 2rem;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}
+
+.btn__form {
+	display: flex;
+	justify-content: space-around;
+	margin-top: 1rem;
+}
+
+.input, .btn__submit, .btn__reset{
+	background-color: #EFEFEF;
+	padding: .5rem;
+	margin: .5rem 0;
+	border: none;
+	border-bottom: solid #C8C8C8 .2rem;
+	transition: all .5s;
+}
+
+.input:focus {
+	border-bottom: solid #F39B53 .2rem;
+}
+
+.btn__submit, .btn__reset {
+	width: 40%;
+	border-bottom: none;
+	background-color: #31B1E5;
+	color: white;
+}
+
+.btn__reset {
+	background-color: #EDA135;
+}
+
+.btn__submit:hover {
+	background-color: #4C9ED9;
+}
+
+.btn__reset:hover{
+	background-color: #FA9535;
+}
+/* http://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+.contenedor{
+	background: url("http://landscape-photography-blog.com/images/pokemon-wallpapers/36406291-pokemon-wallpapers.jpg")no-repeat;
+	background-size: cover;
+	width: 100% !important;
+	height: 920px !important;
+}
+.login{
+	background:url("https://www.rosiesrewards.com/wp-content/uploads/2018/11/pokemon-iphone-wallpaper-luxury-fondos-para-whatsapp-of-pokemon-iphone-wallpaper.jpg")no-repeat;
+	background-size: cover;
+	width: 100%;
+	height: 700px;
+	opacity:0.7;
+	margin-top:15%;
+	border-radius: 60px;
+	border: 6px #000000 solid;
+}
+.nombre{
+	margin-top: 30%;
+}
+.usuario{
+	background-size: center;
+	width: 50%;
+	height: 200px;
+	margin-left: 25%;
+}
+.navBar{
+	height:auto;
+	background: transparent;
+}
+.pokk{
+	margin: 0 auto;
+	height: 200px;
+
+}
+.pok{
+	color: #FFF;
+}
+.altototal{
+	height: 100%;
+}
+.pad{
+	padding: 4%;
+}
+.pokeinfo{
+	margin: 0 auto;
+	width: 100% !important;
+	border: 4px #000000 solid;
+}
+.imgpoke{
+	background: #CE8D0F;
+	margin:0 auto;
+	height: 150px !important;
+	width: 100% !important;
+}
+.nompoke{
+	background:#39E873;
+	padding: 4%;
+	border-top: 4px solid #000000;
+  color: black;
+}
+.fondo{
+  background: gray;
+	background-size: cover;
+}
+.centrar{
+  margin: 0 auto;
+  text-align: center;
+  font-family: 'Anton', sans-serif;
+  font-size: 39px;
+  color: #00FF00;
+}
+.centrarr{
+background: red;
+  text-align: center;
+  border: 1px solid black;
+
+}
+
